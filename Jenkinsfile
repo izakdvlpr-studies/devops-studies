@@ -5,7 +5,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-					dockerapp = docker.build("izakdvlpr/kubenews:${env.BUILD_ID}", '-f ./web/Dockerfile ./web')
+					dockerapp = docker.build("izakdvlpr/kubenews:${env.BUILD_ID}", '-f ./jenkins/web/Dockerfile ./jenkins/web')
 				}
             }
         }
