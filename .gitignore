@@ -1,5 +1,7 @@
 jenkins/web/node_modules/
 *.Identifier
 terraform/terraform.tfstate
+terraform/kube_config.yaml
+terraform/.terraform.tfstate.lock.info
 terraform/terraform.tfstate.backup
 terraform/terraform.tfvars
